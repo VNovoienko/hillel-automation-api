@@ -6,6 +6,7 @@ const todoId = 1;
 const userId = 1;
 const postId = 1;
 
+
 test('GET /todos/:id returns correct todo', async () => {
   const response = await axios.get(`${API_URL}/todos/${todoId}`);
   expect(response.status).toBe(200);
